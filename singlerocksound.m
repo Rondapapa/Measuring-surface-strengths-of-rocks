@@ -1,0 +1,10 @@
+R=512%设置窗函数长度
+window=hamming(R);%使用汉明窗
+N=1024;%短时傅立叶函数点数
+L=R/2;%步长
+overlap=round(R-L);%窗重叠点数
+s=specgram(data(:,1),N,fs,window,overlap);%生成声谱图
+y=20*log10(abs(s)+eps);%如需要在转换实数和虚数
+figure;
+%figure('units','normalized','position',[0.2,0.1,0.5,0.8])
+imagesc(y)
