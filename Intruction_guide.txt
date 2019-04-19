@@ -4,6 +4,6 @@ Intruction guide
 2. The train_part.py is to retrain the inception-v3 model.
 3. The prediction.py is for prediction.
 
-step 1: run the produce_spectrograms.m. 
+step 1: run the produce_spectrograms.m. The test_data.wav is a sound file. The spectrograms.zip are the spectrograms produced from the sound file.
 step 2: run the train_part.py to retrain the inception-v3 model.
 step 3: use the prediction.py to calculate the strength of the spectrograms.
