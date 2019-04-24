@@ -1,0 +1,11 @@
+Instruction guide
+
+1. The produce_spectrograms.m is to produce the spectrograms of hammering sounds.
+2. The train_part.py is to retrain the inception-v3 model.
+3. The prediction.py is for prediction.
+
+step 1: open the produce_spectrograms.m. 
+step 2: the test_data.wav is a test sound file. Input it into the Matlab application and name it as "data".
+step 3: run the produce_spectrograms.m, and a set of spectrograms will be obtained. The spectrograms.zip are the spectrograms produced from the sound file.
+step 4: run the train_part.py to retrain the inception-v3 model with spectrograms. (The way to retraining the model refers to https://kwotsin.github.io/tech/2017/02/11/transfer-learning.html)
+step 5: use the prediction.py to calculate the strength of the spectrograms.
